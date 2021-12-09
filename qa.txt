@@ -1,0 +1,34 @@
+﻿TestNFDI : Validation Results
+=========================================
+
+err = 1, warn = 7, info = 0
+IG Publisher Version: 1.1.83 Out of date - current version is 1.1.90
+Generated Thu Dec 09 14:43:36 UTC 2021. FHIR version 4.0.1 for test.nfdi#0.1.0 (canonical = https://www.nfdi4health.de/task-force-covid-19.html)
+ Build Errors : 1 / 4 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-test.nfdi : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-ExampleHerzfrequenz : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Freitext : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Herzfrequenz : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MyPatient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-HeartRates : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-ObservationStatus : 0 / 2 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Freitext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/HeartRates.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ObservationStatus.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ExampleHerzfrequenz.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Observation-ExampleHerzfrequenz.html#/html/body/div/div/div/div/div/div/p/a at Line 157, column 186: The link 'Patient/example' for "Patient/example" cannot be resolved
+== fsh-generated/resources/ImplementationGuide-test.nfdi.json ==
+== fsh-generated/resources/Observation-ExampleHerzfrequenz.json ==
+ERROR: Observation/ExampleHerzfrequenz: Observation.subject: Unable to resolve resource 'Patient/example'
+== fsh-generated/resources/Patient-PatientExample.json ==
+== fsh-generated/resources/StructureDefinition-Freitext.json ==
+WARNING: StructureDefinition.where(url = 'https://www.nfdi4health.de/task-force-covid-19.html/StructureDefinition/Freitext'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Herzfrequenz.json ==
+== fsh-generated/resources/StructureDefinition-MyPatient.json ==
+== fsh-generated/resources/ValueSet-HeartRates.json ==
+== fsh-generated/resources/ValueSet-ObservationStatus.json ==
+WARNING: ValueSet/ObservationStatus: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'ObservationStatus'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/observation-status

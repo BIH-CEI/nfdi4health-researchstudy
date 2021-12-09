@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ObservationStatus",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/ValueSet/observation-status</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>final</td><td/></tr><tr><td>unknown</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "https://www.nfdi4health.de/task-force-covid-19.html/ValueSet/ObservationStatus",
+  "version": "0.1.0",
+  "name": "ObservationStatus",
+  "status": "active",
+  "date": "2021-12-09T14:43:14+00:00",
+  "publisher": "NFDI",
+  "contact": [
+    {
+      "name": "NFDI",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de/kontakt.html"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/observation-status",
+        "concept": [
+          {
+            "code": "final"
+          },
+          {
+            "code": "unknown"
+          }
+        ]
+      }
+    ]
+  }
+}

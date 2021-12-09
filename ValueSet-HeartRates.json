@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "HeartRates",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/8867-4.html\">8867-4</a></td><td>Heart rate</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=364075005\">364075005</a></td><td>Heart rate</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.nfdi4health.de/task-force-covid-19.html/ValueSet/HeartRates",
+  "version": "0.1.0",
+  "name": "HeartRates",
+  "status": "active",
+  "date": "2021-12-09T14:43:14+00:00",
+  "publisher": "NFDI",
+  "contact": [
+    {
+      "name": "NFDI",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de/kontakt.html"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "8867-4"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "364075005"
+          }
+        ]
+      }
+    ]
+  }
+}

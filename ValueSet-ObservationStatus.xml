@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ObservationStatus"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/ValueSet/observation-status</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>final</td><td/></tr><tr><td>unknown</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.nfdi4health.de/task-force-covid-19.html/ValueSet/ObservationStatus"/>
+  <version value="0.1.0"/>
+  <name value="ObservationStatus"/>
+  <status value="active"/>
+  <date value="2021-12-09T14:43:14+00:00"/>
+  <publisher value="NFDI"/>
+  <contact>
+    <name value="NFDI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nfdi4health.de/kontakt.html"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/ValueSet/observation-status"/>
+      <concept>
+        <code value="final"/>
+      </concept>
+      <concept>
+        <code value="unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

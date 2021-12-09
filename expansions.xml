@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="08b4a85c-f920-4f7d-bcd5-c9fca3c11258"/>
+  <meta>
+    <lastUpdated value="2021-12-09T14:43:14.963+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.nfdi4health.de/task-force-covid-19.html/ValueSet/HeartRates"/>
+    <resource>
+      <ValueSet>
+        <id value="HeartRates"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>Loinc v2.71</li>
+                <li>SNOMED CT International edition 31-Jul 2021</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-8867-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/8867-4.html">8867-4</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Heart rate</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-364075005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=364075005">364075005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Heart rate</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.nfdi4health.de/task-force-covid-19.html/ValueSet/HeartRates"/>
+        <version value="0.1.0"/>
+        <name value="HeartRates"/>
+        <status value="active"/>
+        <date value="2021-12-09T14:43:14+00:00"/>
+        <publisher value="NFDI"/>
+        <contact>
+          <name value="NFDI"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.nfdi4health.de/kontakt.html"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:f4c989c6-e888-4ba8-9f40-fdf384f04a09"/>
+          <timestamp value="2021-12-09T14:43:28+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.71"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="8867-4"/>
+            <display value="Heart rate"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="364075005"/>
+            <display value="Heart rate"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

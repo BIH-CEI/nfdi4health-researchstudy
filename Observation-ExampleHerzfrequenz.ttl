@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.nfdi4health.de/task-force-covid-19.html/Observation/ExampleHerzfrequenz> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ExampleHerzfrequenz"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.nfdi4health.de/task-force-covid-19.html/StructureDefinition/Herzfrequenz";
+       fhir:index 0;
+       fhir:link <https://www.nfdi4health.de/task-force-covid-19.html/StructureDefinition/Herzfrequenz>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8867-4}\">Heart rate</span></p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p><p><b>value</b>: 60 pro Minute</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:8867-4;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "8867-4" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://www.nfdi4health.de/task-force-covid-19.html/Patient/example>;
+     fhir:Reference.reference [ fhir:value "Patient/example" ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "60"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "pro Minute" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "/min" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.nfdi4health.de/task-force-covid-19.html/Observation/ExampleHerzfrequenz.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

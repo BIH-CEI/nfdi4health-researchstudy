@@ -1,0 +1,44 @@
+[
+  {
+    "id": "test.nfdi",
+    "type": "ImplementationGuide",
+    "url": "https://www.nfdi4health.de/task-force-covid-19.html/ImplementationGuide/test.nfdi",
+    "version": "0.1.0",
+    "name": "TestNFDI"
+  },
+  {
+    "id": "Freitext",
+    "type": "StructureDefinition",
+    "url": "https://www.nfdi4health.de/task-force-covid-19.html/StructureDefinition/Freitext",
+    "version": "0.1.0",
+    "name": "Freitext"
+  },
+  {
+    "id": "Herzfrequenz",
+    "type": "StructureDefinition",
+    "url": "https://www.nfdi4health.de/task-force-covid-19.html/StructureDefinition/Herzfrequenz",
+    "version": "0.1.0",
+    "name": "Herzfrequenz"
+  },
+  {
+    "id": "MyPatient",
+    "type": "StructureDefinition",
+    "url": "https://www.nfdi4health.de/task-force-covid-19.html/StructureDefinition/MyPatient",
+    "version": "0.1.0",
+    "name": "MyPatient"
+  },
+  {
+    "id": "HeartRates",
+    "type": "ValueSet",
+    "url": "https://www.nfdi4health.de/task-force-covid-19.html/ValueSet/HeartRates",
+    "version": "0.1.0",
+    "name": "HeartRates"
+  },
+  {
+    "id": "ObservationStatus",
+    "type": "ValueSet",
+    "url": "https://www.nfdi4health.de/task-force-covid-19.html/ValueSet/ObservationStatus",
+    "version": "0.1.0",
+    "name": "ObservationStatus"
+  }
+]

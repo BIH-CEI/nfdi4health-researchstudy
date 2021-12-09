@@ -1,0 +1,67 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "08b4a85c-f920-4f7d-bcd5-c9fca3c11258",
+  "meta" : {
+    "lastUpdated" : "2021-12-09T14:43:14.963+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://www.nfdi4health.de/task-force-covid-19.html/ValueSet/HeartRates",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "HeartRates",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.71</li><li>SNOMED CT International edition 31-Jul 2021</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8867-4\"> </a><a href=\"http://details.loinc.org/LOINC/8867-4.html\">8867-4</a></td><td>http://loinc.org</td><td>Heart rate</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-364075005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=364075005\">364075005</a></td><td>http://snomed.info/sct</td><td>Heart rate</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.nfdi4health.de/task-force-covid-19.html/ValueSet/HeartRates",
+      "version" : "0.1.0",
+      "name" : "HeartRates",
+      "status" : "active",
+      "date" : "2021-12-09T14:43:14+00:00",
+      "publisher" : "NFDI",
+      "contact" : [{
+        "name" : "NFDI",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.nfdi4health.de/kontakt.html"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f4c989c6-e888-4ba8-9f40-fdf384f04a09",
+        "timestamp" : "2021-12-09T14:43:28+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.71"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "8867-4",
+          "display" : "Heart rate"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "364075005",
+          "display" : "Heart rate"
+        }]
+      }
+    }
+  }]
+}

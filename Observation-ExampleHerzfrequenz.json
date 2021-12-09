@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleHerzfrequenz",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/task-force-covid-19.html/StructureDefinition/Herzfrequenz"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8867-4}\">Heart rate</span></p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p><p><b>value</b>: 60 pro Minute</p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8867-4"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "valueQuantity": {
+    "value": 60,
+    "unit": "pro Minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  }
+}
