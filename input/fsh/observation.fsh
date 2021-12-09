@@ -4,7 +4,7 @@ Profile: Herzfrequenz
 Parent: Observation
 Description: "Profil für Herzfrequenz"
 //* identifier 1..
-* status from ObservationStatus
+//* status from ObservationStatus
 * basedOn only Reference(CarePlan)
 * code from HeartRates (required)
 //* code.coding 1..1 MS
